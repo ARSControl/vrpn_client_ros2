@@ -1,0 +1,14 @@
+vrpn_client_node:
+  ros__parameters:
+    server: "192.168.2.50"
+    port: 3883
+    update_frequency: 180.0
+    frame_id: "world"
+    # Use the VRPN server's time, or the client's ROS time.
+    use_server_time: false
+    broadcast_tf: true
+    # Must either specify refresh frequency > 0.0, or a list of trackers to create
+    refresh_tracker_frequency: 1.0
+    #trackers:
+    #- FirstTracker
+    #- SecondTracker
